@@ -1,0 +1,85 @@
+/* Global_style */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(124, 237, 199);
+
+}
+textarea{
+    resize: none;
+}
+.head h1{
+    color: white;
+    text-align: center;
+    margin: 2% 0;
+    font-size: 60px;
+}
+.container{
+    width: 100%;
+    display: inline-block;
+
+}
+
+/* Custom_Style */
+.for{
+    width: 40%;
+    display: inline-block;
+    vertical-align: middle;
+
+
+}
+form{
+    margin-left: 3%;
+}
+.form_styling{
+    width: 100%;
+    display: block;
+    padding: 2%;
+    margin: 2% 0%;
+    background-color: aliceblue;
+    color: #aba7a7;
+    border: 0;
+    border-radius: 10px;
+    padding: 4%;
+}
+#side{
+    display: inline-block;
+    width: 47%;
+}
+.phone{
+margin-left: 5%;
+}
+
+.btn {
+    background-color: #f1f116;
+    border-radius: 5px;
+    padding: 3%;
+    display: block;
+    margin-left: auto;
+    border: 0;
+}
+.find_us{
+    display: inline-block;
+    width: 40%;
+    margin-left: 15%;
+    color: aliceblue;
+    
+}
+.find_us h2{
+    font-size: 50px;
+    /* margin: 4% 0% */
+}
+.find_us p{
+    margin: 2% 0%;
+}
+.find_us a{
+    color: #f1f116;
+    text-decoration: none;
+
+}
+.find_us ul{
+    margin: 1% 0%;
+    list-style: none;
+}
+
