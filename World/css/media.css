@@ -1,0 +1,122 @@
+@media (max-width: 575.98px){
+    .d-flex{
+        flex-wrap: wrap;
+    }
+    nav h1{
+        margin-bottom: 6%;
+    }
+   .center{
+    text-align: center;
+   }
+    .nav-list{
+        width: 100%;
+    }
+    #hide{
+        display: none;
+    }
+    #disply{
+        /* display: block; */
+        width: 100%;
+    }
+   
+    .right h3{
+        margin: 6% 0%;
+ }
+    .aside-ul{
+        width: 100%;
+    }
+    .w-47{
+        width: 100%;
+    }
+    .card .w-60{
+        width: 60%;
+    }
+    .card{
+        margin-bottom: 3%;
+    }
+    /* .w-70{
+        width: 100%;
+    } */
+    .arrow{
+        display: none;
+    }
+    .trending ul {
+        width: 100%;
+    }
+    .w-45{
+        width: 100%;
+    }
+    .w-60{
+        width: 100%;
+    }
+    .left-aside {
+        border-left: 0px;
+        margin-top: 3%;
+        width: 100%;
+    }
+    .main .w-30{
+        width: 100%;
+    }
+    .left-article{
+        width: 100%;
+    }
+    .right-article{
+        width: 100%;
+    }
+    footer .w-30{
+        width: 100%;
+    }
+    footer p{
+        margin-bottom: 6%;
+    }
+}
+/* @media(min-width:576px ){
+  
+} */
+
+@media  (min-width:576px) and (max-width:1200px) {
+    .d-flex{
+        flex-wrap: wrap;
+    }
+    nav ul{
+        width: 100%;
+    }
+    .arrange{
+        width: 100%;
+        margin: 4% 0%;
+    }
+    .center{
+        text-align: center;
+    }
+    .right{
+        width: 100%;
+    }
+    .left-aside {
+        width: 100%;
+        border-left: 0px;
+    }
+    .main .w-30{
+        width: 100%;
+    }
+    .left-article{
+        width:100%;
+    }
+    .right-article{
+        width: 100%;
+    }
+    footer .w-30{
+        width: 50%;
+
+    }
+    footer .relative{
+        width: 100%;
+    }
+
+
+
+
+
+
+
+    
+}
