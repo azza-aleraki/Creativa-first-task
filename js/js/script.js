@@ -139,21 +139,21 @@
 //     var bmi = weight/(height*height)
 //     document.getElementById("bmi").innerHTML = bmi
 //     var bmiCategory="نحيف"
-    
+
 //     if(bmi < 18){
 //         bmiCategory ="نحيف"
 //     }else if(bmi < 24){
 //         bmiCategory ="وزن مثالي"
-    
+
 //     }else if(bmi < 29.9){
 //         bmiCategory ="وزن زائد"
-    
+
 //     }else if(bmi < 34.9){
 //         bmiCategory ="سمنه درجه اولي"
-    
+
 //     }else if(bmi < 39.9){
 //         bmiCategory ="سمنه درجه ثانيه"
-    
+
 //     }else {
 //         bmiCategory = "سمنه خطيره"
 //     }
@@ -209,71 +209,130 @@
 // console.log(arr.reverse())
 
 
+
+// =====================================Task==============================
+
+// var users = []
+
+// function addUser(){
+//     var userData ={
+//         name : prompt("type user Name") ,
+//         id : prompt("type user id") ,
+//         balance :prompt("type user balance")     
+// }
+// users.push(userData)
+
+// }
+// addUser()
+// addUser()
+// console.log(users)
+
+//  function editUserBalanceById(x, y){
+//     var x = prompt("Enter Your Id")
+//     var y = prompt("Enter User Balance")
+
+//    var index =  users.findIndex(item => item.id == x) 
+//     users[index].balance = y
+
+//  }
+//  editUserBalanceById()
+//  console.log(users)
+
+//  function deleteUserById(){
+//     var x = prompt("Enter id you want to Delete")
+//     var index =users.findIndex(item => item.id == x)
+//     users.splice(index , 1)
+//  }
+//  deleteUserById()
+//  console.log(users)
+
+
+
+
+// type (onmouseenter) ? Element.style.color = 'green' : 
+// if  (type == onclick) {
+//     element.style.color = 'green'
+// }
+// else {
+
+// }
+
+
+
+// ===================================DOM===========================
+// ========================================================changeColorOfElement===================================
+// function setColor(element){
+//     var li = document.getElementsByClassName('nav-li')
+//     for(i=0 ; i < li.length ;i++){
+//         li[i].style.color = 'black'
+
+//     }
+//      element.style.color = "blue" 
+// }
+
+
+// ========================Add  ,  Delete  ,  Edit=====================================
 var users = []
 
-function addUser(){
-    var userData ={
-        name : prompt("type user Name") ,
-        id : prompt("type user id") ,
-        balance :prompt("type user balance")     
+var form = document.getElementById('register')
+form.addEventListener("submit", function (e) {
+  e.preventDefault()
+  var user = {
+    name: e.target.elements.userName.value,
+    address: e.target.elements.userAddress.value
+  }
+
+
+
+  users.push(user)
+  console.log(users)
+  showUsers(user)
 }
-users.push(userData)
+)
+
+
+function showuser() {
+  var table = document.getElementById("table-id");
+  table.innerText = ""
+  users.forEach((e) => {
+    var tr = document.createElement("tr");
+    var tdname = document.createElement("td");
+    var tdadress = document.createElement("td");
+    var tdAction = document.createElement("td");
+    var tdreomve = document.createElement("td")
+    var tdupadte = document.createElement("td")
+    tdname.innerText = e.Name;
+    tdadress.innerText = e.Address;
+    tdreomve.innerText = "Remove"
+    tdupadte.innerText = "Update"
+    tr.appendChild(tdname);
+    tr.appendChild(tdadress);
+    tr.appendChild(tdAction);
+    tdAction.appendChild(tdreomve)
+    tdAction.appendChild(tdupadte)
+    tdreomve.classList.add("btn", "btn-primary")
+    tdupadte.classList.add("btn", "btn-primary")
+    tdreomve.addEventListener("click", function () {
+      removeuser(e);
+    });
+    tdupadte.addEventListener("click", function () {
+      updateuser(e)
+    })
+  })
  
-}
-addUser()
-addUser()
-console.log(users)
+    
+  }
+  function removeuser(i) {
+    users.splice(i, 1);
+    showuser();
+  }
 
- function editUserBalanceById(x, y){
-    var x = prompt("Enter Your Id")
-    var y = prompt("Enter User Balance")
-
-   var index =  users.findIndex(item => item.id == x) 
-    users[index].balance = y
-
- }
- editUserBalanceById()
- console.log(users)
-
- function deleteUserById(){
-    var x = prompt("Enter id you want to Delete")
-    var index =users.findIndex(item => item.id == x)
-    users.splice(index , 1)
- }
- deleteUserById()
- console.log(users)
-
+  function updateuser(i) {
+    var NAME = prompt("enter name");
+    var ADDRESS = prompt("enter address");
+    i.Address = ADDRESS;
+    i.Name = NAME;
+    showuser();
+  }
  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

@@ -1,0 +1,28 @@
+@media(max-width:1200px){
+
+    .features{
+    translate:0px;
+    /* width: 100%; */
+    /* background-color: aquamarine; */
+    }
+    .angle{
+        display: none;
+    }
+    .line:after , .line:before ,.line-custom:after , .line-custom:before , .custom-meet-line:after , .custom-meet-line:before{
+      border-bottom: 0px;
+      border-top: 0px;      
+      width: 0px;  
+    }
+    .custom-purchase-btn::before{
+        display: none;
+    }
+    .contact-bg-img h1{
+        font-size: 50px;
+        text-align: center;
+
+    }
+    
+    /* .line-custom:before ,.line-custom:after{
+        display: none;
+    } */
+}
